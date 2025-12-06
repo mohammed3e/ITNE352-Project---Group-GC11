@@ -33,3 +33,41 @@ class SimpleNewsClient:
 
         self.search_btn = tk.Button(root, text="Search Headlines", command=self.search_headlines)
         self.search_btn.pack()
+# --- Results section ---
+        self.listbox = tk.Listbox(root, width=50)
+        self.listbox.pack()
+        self.listbox.bind("<<ListboxSelect>>", self.show_details)
+
+        self.details_text = tk.Text(root, height=10, width=50)
+        self.details_text.pack()
+    # Connect to the server
+    def connect(self):
+        username = self.username_entry.get().strip()
+        if not username:
+            messagebox.showwarning("Warning", "Enter username")
+            return
+        try:
+            self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            self.sock.connect((HOST, PORT))
+            self.sock.sendall(json.dumps({"username": username}).encode())
+            self.connected = True
+            self.status_label.config(text="Connected", fg="green")
+            self.connect_btn.config(state="disabled")
+            self.username_entry.config(state="disabled")
+        except Exception as e:
+            messagebox.showerror("Error", f"Cannot connect: {e}")
+
+    # Send a request to the server
+    def send_request(self, action, params=None):
+        if not self.connected:
+            messagebox.showwarning("Warning", "Connect first")
+            return None
+        if params is None:
+            params = {}
+        try:
+            self.sock.sendall(json.dumps({"action": action, "params": params}).encode())
+            data = self.sock.recv(65535)
+            return json.loads(data.decode())
+        except Exception as e:
+            messagebox.showerror("Error", f"Communication error: {e}")
+            return None
