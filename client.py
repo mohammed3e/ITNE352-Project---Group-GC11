@@ -100,3 +100,9 @@ class SimpleNewsClient:
         self.details_text.insert(tk.END, f"Author: {item.get('author','')}\n")
         self.details_text.insert(tk.END, f"Description: {item.get('description','')}\n")
         self.details_text.insert(tk.END, f"URL: {item.get('url','')}\n")
+
+        
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = SimpleNewsClient(root)
+    root.mainloop()
