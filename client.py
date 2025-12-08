@@ -163,3 +163,10 @@ class NewsClient:
 
         except Exception as e:
             messagebox.showerror("Error", f"Communication error: {e}")
+
+            
+# run app
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = NewsClient(root)
+    root.mainloop()
