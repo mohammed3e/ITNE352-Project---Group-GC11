@@ -217,7 +217,7 @@ The client:
 - Handle user navigation and selection
 - Cleanly disconnect and notify server on exit
 
-**Additional Concepts**
+## Additional Concepts
 
 - Multithreading (server-side) for multiple clients
 - JSON communication (json.dumps / json.loads)
