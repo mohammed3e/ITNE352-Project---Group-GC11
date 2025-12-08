@@ -129,7 +129,7 @@ The server:
     def handle_client(conn, address):
     user = conn.recv(1024).decode("utf-8").strip()
 
-### Responsibilities:
+## Responsibilities:
 
 - Reads user commands
 
@@ -143,15 +143,91 @@ The server:
 
 - Manages user disconnection
 
- 
 
-5. **Server Startup Loop**
-- Starts listening for clients and creates a new thread for each client:
- ```python
-   with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as soc:
-     soc.bind((HOST, PORT))
-     soc.listen(MAX_CONNECTIONS)
-      while True:
-        sock, address = soc.accept(s)
-        threading.Thread(target=handle_client, args=(sock, address)).start()
+### client.py
 
+**Main Functionalities**  
+The client:
+- Connects to the server
+- Sends user choices and search queries
+- Displays results in GUI popups using Tkinter
+- Allows selecting items for more details
+
+**Key Functions in client.py**
+
+1. recv_json(sock)  
+   - Purpose: Receives and decodes JSON data from the server, handles incomplete packets and returns Python objects.  
+   - Example:
+   ```python
+   def recv_json(sock):
+       buffer = ""
+       while True:
+           chunk = sock.recv(4096)
+           if not chunk:
+               break
+           buffer += chunk.decode(errors="ignore")
+           try:
+               return json.loads(buffer)
+           except json.JSONDecodeError:
+               continue
+       return None
+   ```
+
+2. gui_input(prompt)  
+   - Purpose: Displays a Tkinter input dialog and returns the user input.
+   ```python
+   def gui_input(prompt):
+       return simpledialog.askstring("A1", prompt)
+   ```
+
+3. show_headlines(sock, user)  
+   - Purpose: Handles the headlines search flow:
+     - Sends search request to server
+     - Receives a list of article summaries
+     - Displays headlines in a popup
+     - Lets user select an article and requests full details from server
+     - Shows article details in a popup
+
+4. show_sources(sock, user)  
+   - Purpose: Handles source-search flow:
+     - Requests list of sources (optionally filtered)
+     - Displays list in a popup
+     - Sends selected source index to server and shows details
+
+5. send_json(sock, data)  
+   - Purpose: Utility to send JSON-encoded data to server.
+   ```python
+   def send_json(sock, data):
+       sock.sendall(json.dumps(data).encode())
+   ```
+
+6. main()  
+   - Purpose: Main client logic:
+     - Shows GUI prompt for username
+     - Connects to server (HOST, PORT)
+     - Sends username to server
+     - Presents main menu (Search Headlines / List of Sources / Quit)
+     - Routes user choices to show_headlines() or show_sources()
+     - Sends EXIT on quit and closes socket
+
+**Responsibilities**
+- Take username and connect to server
+- Send user commands and queries
+- Receive and display results via Tkinter dialogs
+- Handle user navigation and selection
+- Cleanly disconnect and notify server on exit
+
+**Additional Concepts**
+- Multithreading (server-side) for multiple clients
+- JSON communication (json.dumps / json.loads)
+- TCP sockets for client-server communication
+- Tkinter for simple GUI interaction (simpledialog, messagebox)
+- External API integration: server uses NewsAPI (requests.get with timeout)
+
+## Acknowledgments
+We  thank our instructor for the support and advice throughout the development of this project.
+We also appreciate NewsAPI.org for making real-time news data available, which was essential for building our system.
+
+## Conclusion
+This project successfully demonstrates a working client-server application in Python. It combines network programming, multithreading, and API integration to allow multiple users to request and receive news at the same time.
+The project highlights how Python can be used to handle real-world tasks like fetching live data, managing concurrent connections, and presenting information to users in a simple and interactive way.
