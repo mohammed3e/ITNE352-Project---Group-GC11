@@ -91,7 +91,7 @@ def show_headlines(soc):
              # Build message showing full details of headline
             detail_msg = (
                 f"Source: {details.get('source', {}).get('name') 
-if isinstance(details.get('source'), dict) else details.get('source')}\n"
+if isinstance(details.get('source'), dict) else details.get('source')}/n"
                 f"Author: {details.get('author')}\n"
                 f"Title: {details.get('title')}\n"
                 f"Description: {details.get('description')}\n"
@@ -104,3 +104,62 @@ if isinstance(details.get('source'), dict) else details.get('source')}\n"
                     time = time.replace("Z", "")
                     detail_msg += f"Published Date: {date}\nPublished Time: {time}"
             messagebox.showinfo("A1", detail_msg)  # Show details in GUI
+# Function to show sources and handle source-related operations
+def show_sources(soc):
+    soc.sendall("List of sources".encode())  # Request sources from server
+    options = {
+        "1": "Search by category",
+        "2": "Search by country",
+        "3": "Search by language",
+        "4": "List all",
+        "5": "Back to the main menu"
+    }
+    while True:
+        choice = gui_input(
+            "Sources Menu:\n1- Search by category\n2- Search by country\n3- Search by language\n4- List all\n5- Back to main menu"
+        )
+        option_text = options.get(choice)
+        if not option_text:
+            messagebox.showinfo("A1", "Invalid option")
+            continue
+        if option_text == "Back to the main menu":
+            break
+
+        soc.sendall(option_text.encode())
+        value = None
+        if option_text in ["Search by category", "Search by country", "Search by language"]:
+            value = gui_input(f"Enter value for {option_text}")
+            soc.sendall(value.encode())
+
+        summary = recv_json(soc)
+        if summary is None:
+            messagebox.showinfo("A1", "Server closed connection or invalid response.")
+            return
+        if isinstance(summary, dict) and summary.get("error"):
+            messagebox.showinfo("A1", f"Error: {summary['error']}")
+            continue
+
+        sources_text = "\n".join(f"{idx}. {item.get('name')}" for idx, item in enumerate(summary, 1))
+        idx_input = gui_input(f"Sources List:\n{sources_text}\n\nEnter number for details (0 to skip):")
+        if idx_input == "":
+            idx_input = "0"
+        soc.sendall(idx_input.encode())
+
+        details = recv_json(soc)
+        if details is None:
+            messagebox.showinfo("A1", "Server closed connection or invalid response.")
+            return
+        if isinstance(details, dict) and details.get("error"):
+            messagebox.showinfo("A1", f"Error: {details['error']}")
+            continue
+        if details:
+            # Show detailed information about selected source
+            detail_msg = (
+                f"Name: {details.get('name')}\n"
+                f"Country: {details.get('country')}\n"
+                f"Category: {details.get('category')}\n"
+                f"Language: {details.get('language')}\n"
+                f"Description: {details.get('description')}\n"
+                f"URL: {details.get('url')}"
+            )
+            messagebox.showinfo("A1", detail_msg)
