@@ -42,10 +42,7 @@ def recv_json(sock):
             continue  # Wait for more data if JSON incomplete
 
 def gui_input(prompt):
-    """
-    Show a simple input dialog to the user.
-    Keeps asking until non-empty input is given.
-    """
+    
     while True:
         res = simpledialog.askstring("A1", prompt)
         if res:
@@ -60,7 +57,6 @@ def show_headlines(soc):
     - Receive a list of headlines from server.
     - Allow user to select a headline to see details.
     """
-    soc.sendall("Search headlines".encode())  # Notify server about headlines menu
 
     # Map menu options
     options = {
@@ -72,6 +68,8 @@ def show_headlines(soc):
     }
 
     while True:
+        
+
         # Ask user to choose an option
         choice = gui_input(
             "Headlines Menu:\n1- Search for keywords\n2- Search by category\n3- Search by country\n4- List all new headlines\n5- Back to main menu"
@@ -82,7 +80,7 @@ def show_headlines(soc):
             continue
         if option_text == "Back to the main menu":
             break
-
+        soc.sendall("Search headlines".encode())  # Notify server about headlines menu
         soc.sendall(option_text.encode())  # Send the selected option to server
 
         # Ask for additional input if required
@@ -149,8 +147,7 @@ def show_sources(soc):
     - Receive a list of sources from server.
     - Allow user to select a source to see details.
     """
-    soc.sendall("List of sources".encode())  # Notify server about sources menu
-
+    
     # Map menu options
     options = {
         "1": "Search by category",
@@ -161,6 +158,7 @@ def show_sources(soc):
     }
 
     while True:
+
         # Ask user to choose an option
         choice = gui_input(
             "Sources Menu:\n1- Search by category\n2- Search by country\n3- Search by language\n4- List all\n5- Back to main menu"
@@ -171,7 +169,7 @@ def show_sources(soc):
             continue
         if option_text == "Back to the main menu":
             break
-
+        soc.sendall("List of sources".encode())  # Notify server about sources menu
         soc.sendall(option_text.encode())  # Send selected option to server
 
         # Ask for additional input if required
@@ -219,14 +217,9 @@ def show_sources(soc):
             )
             messagebox.showinfo("A1", detail_msg)
 
-# ---------------- Main Function ----------------
+# Main Function 
 def main():
-    """
-    Main program:
-    - Ask for username.
-    - Connect to server.
-    - Show main menu: Headlines, Sources, Quit.
-    """
+    
     user = gui_input("Enter your name:")
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as soc:
         soc.connect((HOST, PORT))  # Connect to server
@@ -247,5 +240,5 @@ def main():
                 messagebox.showinfo("A1", "Invalid choice.")
 
 #  Start Program 
-if __name__ == "__main__":
+if _name_ == "_main_":
     main()
