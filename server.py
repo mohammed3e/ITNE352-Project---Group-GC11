@@ -48,8 +48,7 @@ def send_json(conn, data):
         print("[SEND ERROR]", e)
 
 def handle_client(conn, address):
-    last_articles = {}
-    last_sources = {}
+    
 
     try:
         user = conn.recv(1024).decode("utf-8").strip()
@@ -100,7 +99,7 @@ def handle_client(conn, address):
                 send_json(conn, {"error": "No results found"})
                 continue
 
-            last_articles[user] = articles
+         
             filename = f"{user}_headlines_{GROUP_ID}.json"
             with open(filename, "w", encoding="utf-8") as f:
                 json.dump(articles, f, indent=2, ensure_ascii=False)
@@ -163,7 +162,6 @@ def handle_client(conn, address):
                 send_json(conn, {"error": "No results found"})
                 continue
 
-            last_sources[user] = sources
             filename = f"{user}_sources_{GROUP_ID}.json"
             with open(filename, "w", encoding="utf-8") as f:
                 json.dump(sources, f, indent=2, ensure_ascii=False)

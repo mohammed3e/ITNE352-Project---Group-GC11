@@ -1,0 +1,197 @@
+[
+  {
+    "source": {
+      "id": null,
+      "name": "BBC News"
+    },
+    "author": null,
+    "title": "True origin of 'first black Briton' revealed - BBC",
+    "description": "Scientists say they now know where the 'Beachy Head Lady', an ancient skeleton, actually came from.",
+    "url": "https://www.bbc.com/news/articles/ce86jzgxxy4o",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/e7ba/live/20f69530-db46-11f0-bd60-5332627fd119.jpg",
+    "publishedAt": "2025-12-17T17:00:40Z",
+    "content": "Mystery has surrounded where the ancient skeleton is from\r\nScientists have shed light on the true origins of the so-called \"first black Briton\". \r\nThe skeletal remains - dating from Roman times - wer… [+2781 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "The Spokesman-Review"
+    },
+    "author": "From staff reports",
+    "title": "Nearly 100K without power as high winds push through Spokane region - The Spokesman-Review",
+    "description": "Nearly 100,000 electric customers were without power Wednesday morning as a severe windstorm pushed through the Inland Northwest.",
+    "url": "https://www.spokesman.com/stories/2025/dec/17/thousands-without-power-as-high-winds-push-into-sp/",
+    "urlToImage": "https://thumb.spokesman.com/4VqbB3xadOQjiHykMUrE25aogxw=/1200x630/smart/media.spokesman.com/photos/2025/12/17/6942ee215d29e.hires.jpg",
+    "publishedAt": "2025-12-17T16:55:36Z",
+    "content": "Nearly 100,000 electric customers were without power Wednesday morning as a severe windstorm pushed through the Inland Northwest.\r\nAfter steady increases in outages since 4:30 a.m. when about 1,000 c… [+4240 chars]"
+  },
+  {
+    "source": {
+      "id": "politico",
+      "name": "Politico"
+    },
+    "author": "Hailey Fuchs",
+    "title": "Jack Smith makes his case against Trump in closed-door deposition - Politico",
+    "description": "The former special counsel said the president is responsible for his own actions.",
+    "url": "https://www.politico.com/news/2025/12/17/jack-smith-trump-deposition-congress-00694730",
+    "urlToImage": "https://www.politico.com/dims4/default/resize/1200/quality/90/format/jpg?url=https%3A%2F%2Fstatic.politico.com%2F43%2F1e%2F1f6ecd2a42e29b145902174481b0%2Fu-s-congress-01331.jpg",
+    "publishedAt": "2025-12-17T16:10:45Z",
+    "content": "He maintained that this team found evidence to prove beyond a reasonable doubt that President Trump engaged in a criminal scheme to overturn the results of the 2020 presidential election and to preve… [+4221 chars]"
+  },
+  {
+    "source": {
+      "id": "techcrunch",
+      "name": "TechCrunch"
+    },
+    "author": "Ivan Mehta",
+    "title": "Google launches Gemini 3 Flash, makes it the default model in the Gemini app - TechCrunch",
+    "description": "Google is making Gemini 3 Flash the default model in the Gemini app and oAI model for Search",
+    "url": "https://techcrunch.com/2025/12/17/google-launches-gemini-3-flash-makes-it-the-default-model-in-the-gemini-app/",
+    "urlToImage": "https://techcrunch.com/wp-content/uploads/2025/12/gemini-3_flash_model_blog_header_dark_bleed_2096x1182.jpeg?resize=1200,677",
+    "publishedAt": "2025-12-17T16:00:00Z",
+    "content": "Google today released its fast and cheap Gemini 3 Flash model, based on the Gemini 3 released last month, looking to steal OpenAI’s thunder. The company is also making this the default model in the G… [+4248 chars]"
+  },
+  {
+    "source": {
+      "id": "nfl-news",
+      "name": "NFL News"
+    },
+    "author": null,
+    "title": "Dolphins benching Tua Tagovailoa, to start rookie Quinn Ewers at QB vs. Bengals - NFL.com",
+    "description": "The Miami Dolphins are benching quarterback Tua Tagovailoa and will start rookie Quinn Ewers in Week 16 against the Cincinnati Bengals, per NFL Network Insiders Ian Rapoport, Mike Garafolo and Tom Pelissero.",
+    "url": "https://www.nfl.com/news/dolphins-benching-tua-tagovailoa-to-start-rookie-quinn-ewers-at-qb-vs-bengals",
+    "urlToImage": "https://static.www.nfl.com/image/upload/t_editorial_landscape_12_desktop/league/dgumajosqotkauxru6au",
+    "publishedAt": "2025-12-17T15:32:00Z",
+    "content": null
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "NPR"
+    },
+    "author": "",
+    "title": "More than 10% of Congress won't return to their seats after 2026 - NPR",
+    "description": "NPR is tracking the record number of congressional lawmakers — now more than 1 in 10 current members — who have announced plans to retire or run for a different office in 2026.",
+    "url": "https://www.npr.org/2025/12/17/nx-s1-5647318/congress-retirement-2026-house-senate",
+    "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8192x4608+0+428/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa3%2F28%2Febd5801b4aebb6ab7caccd7e7a42%2Fgettyimages-2223367744.jpg",
+    "publishedAt": "2025-12-17T15:30:45Z",
+    "content": "More than a tenth of the current Congress has now indicated they will not return to their seats after the 2026 midterms, driven by redistricting, retirements and lawmakers running for different offic… [+3737 chars]"
+  },
+  {
+    "source": {
+      "id": "techcrunch",
+      "name": "TechCrunch"
+    },
+    "author": "Sarah Perez",
+    "title": "Google’s vibe-coding tool Opal comes to Gemini - TechCrunch",
+    "description": "The company on Wednesday said it is integrating the tool, which lets you build AI-powered mini apps, inside the Gemini web app, allowing users to create their own custom apps.",
+    "url": "https://techcrunch.com/2025/12/17/googles-vibe-coding-tool-opal-comes-to-gemini/",
+    "urlToImage": "https://techcrunch.com/wp-content/uploads/2025/07/Google-Opal.jpg?resize=1200,675",
+    "publishedAt": "2025-12-17T15:16:42Z",
+    "content": "Google’s vibe-coding tool, Opal, is making its way to Gemini. The company on Wednesday said it is integrating the tool, which lets you build AI-powered mini apps, inside the Gemini web app, allowing … [+1602 chars]"
+  },
+  {
+    "source": {
+      "id": "cnn",
+      "name": "CNN"
+    },
+    "author": "Christian Edwards",
+    "title": "Britain to rejoin EU’s Erasmus student exchange program in Brexit reversal - CNN",
+    "description": "Britain announced that it will rejoin the European Union’s Erasmus student exchange program in 2027, six years after it ditched the scheme during fractious Brexit negotiations.",
+    "url": "https://www.cnn.com/2025/12/17/uk/britain-erasmus-european-union-student-intl",
+    "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2246246143.jpg?c=16x9&q=w_800,c_fill",
+    "publishedAt": "2025-12-17T15:09:29Z",
+    "content": "Britain announced that it will rejoin the European Unions Erasmus student exchange program in 2027, six years after it ditched the scheme during fractious Brexit negotiations.\r\nThe government said re… [+3372 chars]"
+  },
+  {
+    "source": {
+      "id": "the-verge",
+      "name": "The Verge"
+    },
+    "author": "Allison Johnson",
+    "title": "OnePlus 15R review: unbeatable battery life, beatable value - The Verge",
+    "description": "The 15R can go days on a single charge, but its lackluster camera and comparatively high $699 price make it hard to recommend.",
+    "url": "https://www.theverge.com/tech/846012/oneplus-15r-review-battery-camera-performance",
+    "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/12/258207_OnePlus_15R_review_AJohnson_0002.jpg?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200",
+    "publishedAt": "2025-12-17T15:00:00Z",
+    "content": "<ul><li></li><li></li><li></li></ul>\r\nYou can skip your nightly recharge three nights in a row.\r\nIf you buy something from a Verge link, Vox Media may earn a commission. See our ethics statement.\r\nby… [+8567 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "BBC News"
+    },
+    "author": null,
+    "title": "Starmer tells Abramovich to 'pay up now' or face court - BBC",
+    "description": "The Prime Minister said Roman Abramovich should make good on his pledge that money from the sale of Chelsea FC would go to benefit Ukrainians",
+    "url": "https://www.bbc.com/news/articles/cx2e64lr3zeo",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/7e45/live/be0a24f0-db5e-11f0-b67b-690eb873de1b.jpg",
+    "publishedAt": "2025-12-17T14:45:15Z",
+    "content": "Alex Partridge,Politics reporter,\r\nEmer Moreau,Business reporterand\r\nDamian Grammaticas,Political correspondent\r\nThe prime minister has said Russian oligarch Roman Abramovich must \"pay up now\" to vic… [+2620 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "NBCSports.com"
+    },
+    "author": "Josh Alper",
+    "title": "Travis Kelce: We want to end on the highest note we can - NBC Sports",
+    "description": "The Chiefs find themselves in unfamiliar waters heading into Week 16.",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/travis-kelce-we-want-to-end-on-the-highest-note-we-can",
+    "urlToImage": "https://nbcsports.brightspotcdn.com/dims4/default/2daa794/2147483647/strip/true/crop/4781x2689+0+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2F8b%2Fe4%2F6a55ed584d79bc6e05ab87c0efbd%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F2251481514",
+    "publishedAt": "2025-12-17T14:07:21Z",
+    "content": "The Chiefs find themselves in unfamiliar waters heading into Week 16. \r\nLast weeks results, including their loss to the Chargers, left them without any hope of making the playoffs for the 11th straig… [+1333 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "Variety"
+    },
+    "author": "Matt Donnelly",
+    "title": "Leonardo DiCaprio Tells Jennifer Lawrence He’s Never Seen ‘Titanic’ as They Discuss Going Deep in ‘One Battle After Another’ and ‘Die My Love’ - Variety",
+    "description": "Leonardo DiCaprio and Jennifer Lawrence reunite for Actors on Actors and discuss 'One Battle,' 'Die My Love,' and their new Scorsese movie.",
+    "url": "https://variety.com/2025/film/features/leonardo-dicaprio-jennifer-lawrence-titanic-scorsese-1236609459/",
+    "urlToImage": "https://variety.com/wp-content/uploads/2025/12/Jennifer-Lawrence-and-Leonardo-DiCaprio-Variety-Actors-on-Actors.jpg?crop=0px%2C88px%2C1500px%2C843px&resize=1000%2C563",
+    "publishedAt": "2025-12-17T14:00:00Z",
+    "content": "This is it. The grand finale to our most compelling Actors on Actors lineup ever. Jennifer Lawrence and Leonardo DiCaprio are arguably the biggest stars in the world, both Oscar winners whose creativ… [+13940 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "CNBC"
+    },
+    "author": "Yun Li",
+    "title": "Tricolor executives charged with 'systematic fraud' after subprime auto lender roiled banking sector - CNBC",
+    "description": "Prosecutors allege senior managers orchestrated schemes that allowed Tricolor to obtain billions of dollars from lenders by misrepresenting collateral.",
+    "url": "https://www.cnbc.com/2025/12/17/tricolor-execs-charged-with-systematic-fraud-after-subprime-auto-lender-roiled-banking-sector.html",
+    "urlToImage": "https://image.cnbcfm.com/api/v1/image/108242888-1765983854011-108242888-1765977039968-gettyimages-2236768776-TRICOLOR_LENDER.jpg?v=1765987658&w=1920&h=1080",
+    "publishedAt": "2025-12-17T13:07:21Z",
+    "content": "U.S. prosecutors charged top executives of bankrupt subprime auto lender Tricolor Holdings with what they described as a yearslong, \"systematic fraud\" scheme that sent shockwaves through the banking … [+1764 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "BBC News"
+    },
+    "author": null,
+    "title": "Starmer calls doctors' strike 'dangerous' as five-day walkout begins - BBC",
+    "description": "The doctors' union, the British Medical Association, said it was time the government came up with \"a genuinely long-term plan\" on pay and jobs.",
+    "url": "https://www.bbc.com/news/articles/c98nqz29vg2o",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/4fc2/live/f5dcd320-db4d-11f0-aae2-2191c0e48a3b.jpg",
+    "publishedAt": "2025-12-17T12:40:29Z",
+    "content": "Nick Triggle,Health correspondent,\r\nJim Reed,Health reporterand\r\nPhilippa Roxby,Health reporter\r\nPrime Minister Keir Starmer has said the latest five-day strike by doctors in England is \"dangerous an… [+6575 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "BBC News"
+    },
+    "author": null,
+    "title": "Fallout season 2: Making the perfect video game adaptation - BBC",
+    "description": "Masterminds behind the classic video game series tell us how they created a successful TV show.",
+    "url": "https://www.bbc.com/news/articles/cvgr488vlmmo",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/42cd/live/613f0a00-da9c-11f0-b825-331725716d67.jpg",
+    "publishedAt": "2025-12-17T11:30:36Z",
+    "content": "Peter Gillibrand,BBC Newsbeat\r\nElla Purnell returns as Lucy in season two of Fallout\r\nThe second season of Fallout - Prime Video's mega-hit based on the popular video game series - has landed.\r\nSet i… [+6742 chars]"
+  }
+]
