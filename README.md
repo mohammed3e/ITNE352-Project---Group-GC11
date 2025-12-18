@@ -7,8 +7,10 @@ This project implements a Python-based client-server system that exchanges infor
 
 ---
 
+
 ## Semester
-2025-2025-1
+S1 2025–2026
+
 
 ---
 
@@ -201,12 +203,8 @@ The client:
      - Displays list in a popup
      - Sends selected source index to server and shows details
 
-5. send_json(sock, data)  
-   - Purpose: Utility to send JSON-encoded data to server.
-   ```python
-   def send_json(sock, data):
-       sock.sendall(json.dumps(data).encode())
-   ```
+
+   
 
 
 **Responsibilities**
