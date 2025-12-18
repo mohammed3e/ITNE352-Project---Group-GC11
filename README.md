@@ -137,7 +137,7 @@ The server:
     def handle_client(conn, address):
     user = conn.recv(1024).decode("utf-8").strip()
 
-## Responsibilities:
+**Responsibilities**:
 
 - Reads user commands
 
