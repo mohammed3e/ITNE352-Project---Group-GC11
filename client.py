@@ -222,7 +222,13 @@ def main():
     
     user = gui_input("Enter your name:")
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as soc:
-        soc.connect((HOST, PORT))  # Connect to server
+        
+        try:
+          soc.connect((HOST, PORT))  # Connect to server
+        except:
+          messagebox.showerror("Error", "Server is not running.")
+          return
+
         soc.sendall(user.encode())  # Send username
 
         while True:

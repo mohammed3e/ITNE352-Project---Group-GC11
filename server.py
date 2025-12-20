@@ -204,5 +204,10 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as soc:
     soc.listen(MAX_CONNECTIONS)
     print(f"SERVER LISTENING on {HOST}:{PORT}")
     while True:
-        sock, address = soc.accept()
-        threading.Thread(target=handle_client, args=(sock, address)).start()
+        try:
+            sock, address = soc.accept()
+            threading.Thread(target=handle_client, args=(sock, address)).start()
+        except KeyboardInterrupt:
+            print("Server stopped")
+            soc.close() 
+            break
